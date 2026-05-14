@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 540" role="img" aria-label="Árbol de reducción paralela">
+  <rect width="950" height="540" rx="24" fill="#f8fafc"/>
+  <text x="50" y="60" font-family="Segoe UI, Arial" font-size="34" font-weight="700" fill="#0f172a">
+    Reducción paralela
+  </text>
+
+  <g font-family="monospace" font-size="22" text-anchor="middle">
+    <g fill="#dbeafe" stroke="#2563eb">
+      <rect x="80" y="110" width="70" height="50" rx="8"/>
+      <rect x="180" y="110" width="70" height="50" rx="8"/>
+      <rect x="280" y="110" width="70" height="50" rx="8"/>
+      <rect x="380" y="110" width="70" height="50" rx="8"/>
+      <rect x="480" y="110" width="70" height="50" rx="8"/>
+      <rect x="580" y="110" width="70" height="50" rx="8"/>
+      <rect x="680" y="110" width="70" height="50" rx="8"/>
+      <rect x="780" y="110" width="70" height="50" rx="8"/>
+    </g>
+    <text x="115" y="143">x0</text>
+    <text x="215" y="143">x1</text>
+    <text x="315" y="143">x2</text>
+    <text x="415" y="143">x3</text>
+    <text x="515" y="143">x4</text>
+    <text x="615" y="143">x5</text>
+    <text x="715" y="143">x6</text>
+    <text x="815" y="143">x7</text>
+  </g>
+
+  <g stroke="#334155" stroke-width="3">
+    <path d="M115 160 L165 220"/>
+    <path d="M215 160 L165 220"/>
+    <path d="M315 160 L365 220"/>
+    <path d="M415 160 L365 220"/>
+    <path d="M515 160 L565 220"/>
+    <path d="M615 160 L565 220"/>
+    <path d="M715 160 L765 220"/>
+    <path d="M815 160 L765 220"/>
+  </g>
+
+  <g font-family="monospace" font-size="20" text-anchor="middle">
+    <g fill="#dcfce7" stroke="#16a34a">
+      <rect x="120" y="220" width="90" height="55" rx="8"/>
+      <rect x="320" y="220" width="90" height="55" rx="8"/>
+      <rect x="520" y="220" width="90" height="55" rx="8"/>
+      <rect x="720" y="220" width="90" height="55" rx="8"/>
+    </g>
+    <text x="165" y="255">x0+x1</text>
+    <text x="365" y="255">x2+x3</text>
+    <text x="565" y="255">x4+x5</text>
+    <text x="765" y="255">x6+x7</text>
+  </g>
+
+  <g stroke="#334155" stroke-width="3">
+    <path d="M165 275 L265 340"/>
+    <path d="M365 275 L265 340"/>
+    <path d="M565 275 L665 340"/>
+    <path d="M765 275 L665 340"/>
+  </g>
+
+  <g font-family="monospace" font-size="18" text-anchor="middle">
+    <g fill="#fef3c7" stroke="#f59e0b">
+      <rect x="185" y="340" width="160" height="60" rx="8"/>
+      <rect x="585" y="340" width="160" height="60" rx="8"/>
+    </g>
+    <text x="265" y="375">x0+x1+x2+x3</text>
+    <text x="665" y="375">x4+x5+x6+x7</text>
+  </g>
+
+  <g stroke="#334155" stroke-width="3">
+    <path d="M265 400 L465 455"/>
+    <path d="M665 400 L465 455"/>
+  </g>
+
+  <rect x="365" y="455" width="200" height="60" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+  <text x="465" y="493" font-family="monospace" font-size="22" text-anchor="middle" fill="#0f172a">
+    Σ total
+  </text>
+</svg>

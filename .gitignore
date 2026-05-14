@@ -1,0 +1,9 @@
+bin/
+*.o
+*.out
+*.exe
+*.log
+*.tmp
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store

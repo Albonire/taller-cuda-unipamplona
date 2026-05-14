@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" role="img" aria-label="Flujo de memoria CUDA">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#1e293b"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="520" rx="24" fill="#f8fafc"/>
+  <text x="50" y="60" font-family="Segoe UI, Arial" font-size="34" font-weight="700" fill="#0f172a">
+    Flujo de memoria en CUDA
+  </text>
+
+  <rect x="70" y="120" width="360" height="290" rx="24" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+  <text x="115" y="165" font-family="Segoe UI, Arial" font-size="28" font-weight="700" fill="#1d4ed8">
+    Host / CPU
+  </text>
+  <text x="115" y="215" font-family="monospace" font-size="22" fill="#0f172a">malloc()</text>
+  <text x="115" y="255" font-family="monospace" font-size="22" fill="#0f172a">h_A, h_B, h_C</text>
+  <text x="115" y="295" font-family="monospace" font-size="22" fill="#0f172a">h_R</text>
+
+  <rect x="670" y="120" width="360" height="290" rx="24" fill="#ecfdf5" stroke="#16a34a" stroke-width="3"/>
+  <text x="715" y="165" font-family="Segoe UI, Arial" font-size="28" font-weight="700" fill="#15803d">
+    Device / GPU
+  </text>
+  <text x="715" y="215" font-family="monospace" font-size="22" fill="#0f172a">cudaMalloc()</text>
+  <text x="715" y="255" font-family="monospace" font-size="22" fill="#0f172a">d_A, d_B, d_C</text>
+  <text x="715" y="295" font-family="monospace" font-size="22" fill="#0f172a">d_R</text>
+  <text x="715" y="355" font-family="monospace" font-size="22" fill="#0f172a">kernel&lt;&lt;&lt;grid,block&gt;&gt;&gt;</text>
+
+  <path d="M440 210 H655" stroke="#1e293b" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="465" y="190" font-family="monospace" font-size="20" fill="#0f172a">
+    cudaMemcpy H→D
+  </text>
+
+  <path d="M655 330 H440" stroke="#1e293b" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="465" y="365" font-family="monospace" font-size="20" fill="#0f172a">
+    cudaMemcpy D→H
+  </text>
+
+  <text x="95" y="465" font-family="Segoe UI, Arial" font-size="22" fill="#334155">
+    1. Reservar memoria · 2. Copiar datos · 3. Ejecutar kernel · 4. Copiar resultado · 5. Liberar memoria
+  </text>
+</svg>
