@@ -1,11 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 540" role="img" aria-label="Árbol de reducción paralela">
-  <rect width="950" height="540" rx="24" fill="#f8fafc"/>
-  <text x="50" y="60" font-family="Segoe UI, Arial" font-size="34" font-weight="700" fill="#0f172a">
-    Reducción paralela
-  </text>
+  <defs>
+    <style>
+      .bg { fill:#fbfdff }
+      .title { font-family:'Segoe UI', Arial, sans-serif; font-size:34px; font-weight:700; fill:#0f172a }
+      .leaf { fill:#dbeafe; stroke:#2563eb }
+      .pair { fill:#dcfce7; stroke:#16a34a }
+      .quad { fill:#fef3c7; stroke:#f59e0b }
+      .root { fill:#ede9fe; stroke:#7c3aed }
+      .lbl { font-family:monospace; font-size:20px; text-anchor:middle; fill:#0f172a }
+    </style>
+  </defs>
+
+  <rect width="950" height="540" rx="24" class="bg"/>
+  <text x="50" y="60" class="title">Reducción paralela</text>
 
   <g font-family="monospace" font-size="22" text-anchor="middle">
-    <g fill="#dbeafe" stroke="#2563eb">
+    <g class="leaf">
       <rect x="80" y="110" width="70" height="50" rx="8"/>
       <rect x="180" y="110" width="70" height="50" rx="8"/>
       <rect x="280" y="110" width="70" height="50" rx="8"/>
@@ -37,7 +47,7 @@
   </g>
 
   <g font-family="monospace" font-size="20" text-anchor="middle">
-    <g fill="#dcfce7" stroke="#16a34a">
+    <g class="pair">
       <rect x="120" y="220" width="90" height="55" rx="8"/>
       <rect x="320" y="220" width="90" height="55" rx="8"/>
       <rect x="520" y="220" width="90" height="55" rx="8"/>
@@ -57,7 +67,7 @@
   </g>
 
   <g font-family="monospace" font-size="18" text-anchor="middle">
-    <g fill="#fef3c7" stroke="#f59e0b">
+    <g class="quad">
       <rect x="185" y="340" width="160" height="60" rx="8"/>
       <rect x="585" y="340" width="160" height="60" rx="8"/>
     </g>
@@ -70,8 +80,6 @@
     <path d="M665 400 L465 455"/>
   </g>
 
-  <rect x="365" y="455" width="200" height="60" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
-  <text x="465" y="493" font-family="monospace" font-size="22" text-anchor="middle" fill="#0f172a">
-    Σ total
-  </text>
+  <rect x="365" y="455" width="200" height="60" rx="10" class="root"/>
+  <text x="465" y="493" font-family="monospace" font-size="22" text-anchor="middle" fill="#0f172a">Σ total</text>
 </svg>

@@ -1,7 +1,7 @@
 # Taller CUDA - Programación Paralela y Computación Distribuida
 
 <p align="center">
-  <img src="assets/svg/banner_cuda.svg" width="900" alt="Banner CUDA">
+  <img src="assets/svg/banner_cuda.png" width="900" alt="Banner CUDA">
 </p>
 
 <p align="center">
@@ -12,22 +12,6 @@
 
 Repositorio para el taller de introducción a CUDA.  
 Incluye ejemplos en **C CPU** y **CUDA C**, preparados para ejecutarse en **Google Colab con GPU NVIDIA T4**.
-
----
-
-## Recomendación si no tienes GPU NVIDIA
-
-Si tu computador no tiene NVIDIA, no pasa nada.
-
-Puedes:
-
-1. Crear y editar el proyecto desde Fedora.
-2. Subirlo a GitHub.
-3. Abrir el notebook desde Google Colab.
-4. Activar GPU T4.
-5. Compilar y ejecutar con `nvcc`.
-
-En local, sin NVIDIA, solo podrás ejecutar la versión CPU en C.
 
 ---
 
@@ -240,16 +224,4 @@ git branch -M main
 git remote add origin git@github.com:Albonire/taller-cuda-unipamplona.git
 git push -u origin main
 ```
-
-Si usas GitHub CLI:
-
-```bash
-gh repo create taller-cuda-unipamplona --public --source=. --remote=origin --push
-```
-
----
-
-## Nota
-
-Este proyecto está pensado para que los archivos sean fáciles de abrir, clonar y ejecutar desde Google Colab.
 
