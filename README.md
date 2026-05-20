@@ -35,7 +35,7 @@ Incluye ejemplos en **C CPU** y **CUDA C**, preparados para ejecutarse en **Goog
 ├── notebooks/
 │   └── Taller_CUDA_Colab.ipynb
 ├── assets/svg/
-│   ├── banner_cuda.svg
+│   ├── banner_cuda.png
 │   ├── sum_three_arrays.svg
 │   ├── cuda_memory_flow.svg
 │   ├── grid_blocks_threads.svg

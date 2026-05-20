@@ -10,5 +10,5 @@ if command -v nvidia-smi >/dev/null 2>&1; then
   fi
 fi
 
-# Valor por defecto para Google Colab T4.
+# valor por defecto para Google Colab T4.
 echo "sm_75"

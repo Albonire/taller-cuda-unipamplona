@@ -3,9 +3,9 @@ set -euo pipefail
 
 mkdir -p bin
 
-echo "======================================"
+
 echo "Taller CUDA - ejecucion completa"
-echo "======================================"
+
 
 echo ""
 echo "== Verificacion de entorno =="
@@ -64,10 +64,9 @@ for src in "${CUDA_SOURCES[@]}"; do
   out="bin/${name}_cuda"
 
   echo ""
-  echo "======================================"
   echo "Compilando: ${src}"
   echo "Salida: ${out}"
-  echo "======================================"
+ 
 
   nvcc -O2 -arch="${ARCH}" "$src" -o "$out"
 
